@@ -7,7 +7,7 @@ with open("accounts.txt", "r", encoding="utf-8") as f:
     accounts = [line.strip() for line in f if ":" in line]
 
 for account in accounts:
-    username, password = cuenta.split(":")
+    username, password = account.split(":")
 
     url = ""
 
